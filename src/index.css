@@ -4,6 +4,10 @@
 
 @layer base {
   html {
-    @apply font-primary antialiased;
+    @apply font-primary text-[84.5%] antialiased md:text-[100%];
+  }
+
+  * {
+    @apply outline-none focus-visible:ring-2 focus-visible:ring-orange-600;
   }
 }

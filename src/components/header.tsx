@@ -1,10 +1,13 @@
 import { FiChevronDown } from 'react-icons/fi'
+import { Button } from './button'
 
 export function Header() {
   return (
-    <header className="flex min-h-[4.1875rem] items-center justify-between py-6 font-medium text-blue-900 md:container md:mx-auto">
+    <header className="mx-4 flex min-h-[4.1875rem] items-center justify-between py-6 text-blue-900 md:container first-line:font-medium md:mx-auto">
       <nav className="flex items-center gap-12 px-2 py-3">
-        <img src="/logo.svg" alt="" />
+        <a href="#">
+          <img src="/logo.svg" alt="" />
+        </a>
 
         <a href="#" className="hover:opacity-80">
           Products
@@ -24,10 +27,19 @@ export function Header() {
       </nav>
 
       <div className="flex items-center gap-4">
-        <button>Log In</button>
-        <button className="rounded-lg border-2 border-blue-900 px-7 py-3">
+        <Button
+          variant="noBorder"
+          size="lg"
+          className="py-3 text-base font-medium text-blue-900"
+        >
+          Log In
+        </Button>
+        <Button
+          variant="outline"
+          className="px-7 py-3 text-base font-medium text-blue-900"
+        >
           Sign Up Now
-        </button>
+        </Button>
       </div>
     </header>
   )

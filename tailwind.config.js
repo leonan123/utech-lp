@@ -7,15 +7,26 @@ export default {
         blue: {
           900: '#0F172A',
           600: '#2563EB',
-          'gray-600': '#475569',
+        },
+        gray: {
+          600: '#475569',
+          400: '#94A3B8',
+          300: '#CBD5E1',
+          100: '#f1f5f9',
         },
         orange: {
           600: '#EA580C',
+          500: '#F97316',
         },
       },
 
       fontFamily: {
         primary: ['Roboto', 'sans-serif'],
+      },
+
+      boxShadow: {
+        picture:
+          '0px 0px 10px 0px rgba(0, 0, 0, 0.07), 0px 20px 25px -5px rgba(0, 0, 0, 0.10)',
       },
     },
   },
