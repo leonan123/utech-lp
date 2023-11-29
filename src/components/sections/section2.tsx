@@ -3,7 +3,7 @@ import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 export function Section2() {
   return (
     <section className="bg-gray-100">
-      <div className="relative space-y-7 px-4 py-20 md:container md:mx-auto md:space-y-20 md:px-0">
+      <div className="relative mx-4 space-y-7 py-20 md:container md:mx-auto md:space-y-20">
         <img
           src="/images/blobGroup-1.svg"
           className="absolute -left-14 top-80 max-h-[206px] md:top-[27rem] md:block md:max-h-[360px] lg:top-96 lg:max-h-none"

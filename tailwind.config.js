@@ -6,7 +6,9 @@ export default {
       colors: {
         blue: {
           900: '#0F172A',
+          800: '#1E40AF',
           600: '#2563EB',
+          100: '#DBEAFE',
         },
         gray: {
           600: '#475569',
@@ -17,6 +19,14 @@ export default {
         orange: {
           600: '#EA580C',
           500: '#F97316',
+        },
+        purple: {
+          800: '#6B21A8',
+          100: '#F3E8FF',
+        },
+        green: {
+          800: '#166534',
+          100: '#DCFCE7',
         },
       },
 
