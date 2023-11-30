@@ -70,7 +70,6 @@ export function Section3() {
           </div>
 
           <ul className="-mt-11 mr-6 flex items-center gap-4 sm:mr-6">
-            {/* min-w-[200.33333px]  */}
             <li className="z-20 w-[160px] rounded-xl bg-white p-4 shadow-picture sm:w-[200.33333px]">
               <header>
                 <div className="inline-block rounded bg-purple-100 px-2 py-0.5 text-sm leading-5 text-purple-800 ">

@@ -38,6 +38,35 @@ export default {
         picture:
           '0px 0px 10px 0px rgba(0, 0, 0, 0.07), 0px 20px 25px -5px rgba(0, 0, 0, 0.10)',
       },
+
+      animation: {
+        'fade-in-down': 'fade-in-down 0.5s ease-in-out',
+        'fade-in-up': 'fade-in-up 0.3s ease-in-out forwards',
+      },
+
+      keyframes: {
+        'fade-in-down': {
+          '0%': {
+            height: '0',
+          },
+          '100%': {
+            height: '21.25rem',
+          },
+        },
+
+        'fade-in-up': {
+          '0%': {
+            display: 'block',
+            height: '21.25rem',
+            opacity: '1',
+          },
+          '100%': {
+            display: 'none',
+            height: '0',
+            opacity: '0',
+          },
+        },
+      },
     },
   },
   plugins: [],
