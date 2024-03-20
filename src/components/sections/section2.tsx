@@ -3,7 +3,7 @@ import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 export function Section2() {
   return (
     <section className="bg-gray-100">
-      <div className="relative mx-4 space-y-7 py-20 md:container md:mx-auto md:space-y-20">
+      <div className="relative mx-4 space-y-7 py-20 md:mx-10 md:max-w-[1440px] md:space-y-20 3xl:mx-auto">
         <img
           src="/images/blobGroup-1.svg"
           className="absolute -left-14 top-80 max-h-[206px] md:top-[27rem] md:block md:max-h-[360px] lg:top-96 lg:max-h-none"
@@ -68,9 +68,18 @@ export function Section2() {
           </div>
 
           <div className="z-10 flex flex-col">
-            <img src="/images/lines.svg" alt="" className="mx-auto" />
+            <img
+              src="/images/lines.svg"
+              alt=""
+              className="mx-auto hidden sm:block"
+            />
+            <img
+              src="/images/single-line.svg"
+              alt=""
+              className="mx-auto block sm:hidden"
+            />
 
-            <div className="min-w-[377px] max-w-[1160px] pl-[calc(100vw-(100vw-377px)/2)] sm:pl-0">
+            <div className="ml-[calc(100vw_-_calc(100vw-(377px-2rem))_/2)] min-w-[377px] max-w-[1160px] sm:ml-0">
               <ul className="flex items-center justify-between gap-4 overflow-hidden">
                 <li className="flex h-16 w-16 items-center justify-center rounded-xl border border-gray-300 bg-white">
                   <img src="/images/thumbnails/classroom.svg" alt="" />

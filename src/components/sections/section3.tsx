@@ -3,7 +3,7 @@ import { Button } from '../button'
 
 export function Section3() {
   return (
-    <section className="mx-4 max-w-[1440px] py-20 md:mx-auto">
+    <section className="mx-4 max-w-[1440px] py-20 md:mx-10 3xl:mx-auto">
       <div className="flex flex-wrap items-center justify-between text-blue-900">
         <div className="max-w-[544px] space-y-8">
           <h2 className="text-6xl font-extrabold">
@@ -130,8 +130,8 @@ export function Section3() {
 
             <li className="z-10 hidden w-[160px] rounded-xl bg-white p-4 shadow-picture sm:w-[200.33333px] md:block">
               <header>
-                <div className="inline-block rounded bg-green-100 px-2 py-0.5 text-sm font-medium leading-5 text-green-800 ">
-                  Featured
+                <div className="inline-block rounded bg-green-100 px-2 py-0.5 text-sm leading-5 text-green-800 ">
+                  New
                 </div>
 
                 <h3 className="mt-2 text-xl font-medium leading-6 text-blue-900">

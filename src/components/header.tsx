@@ -11,7 +11,7 @@ export function Header() {
   }
 
   return (
-    <header className="mx-4 flex min-h-[4.1875rem] items-center justify-between py-6 text-blue-900 md:container md:mx-auto">
+    <header className="mx-4 flex min-h-[4.1875rem] items-center justify-between py-6 text-blue-900 md:mx-10 md:max-w-[1440px] 3xl:mx-auto">
       <a href="#" className="mr-12">
         <img src="/logo.svg" alt="" />
       </a>
@@ -19,7 +19,7 @@ export function Header() {
       <div
         className={twMerge(
           'absolute right-0 top-[calc(4.1875rem_+_1.5rem)] z-10 w-full flex-1 overflow-hidden border-b-2 border-blue-900 bg-white lg:relative lg:top-0 lg:animate-none lg:border-none lg:bg-none lg:shadow-none',
-          menuIsOpen ? 'animate-fade-in-down block' : 'animate-fade-in-up',
+          menuIsOpen ? 'block animate-fade-in-down' : 'animate-fade-in-up',
         )}
       >
         <div className="mx-4 flex w-full flex-col items-start justify-between gap-12 py-3 md:container md:mx-auto lg:flex-row lg:items-center">

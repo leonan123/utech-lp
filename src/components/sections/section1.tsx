@@ -3,7 +3,7 @@ import { Button } from '../button'
 
 export function Section1() {
   return (
-    <section className="mx-4 grid grid-cols-1 items-center gap-20 py-20 md:container md:mx-auto md:grid-cols-2">
+    <section className="mx-4 grid grid-cols-1 items-center gap-20 py-20 md:mx-10 md:max-w-[1440px] md:grid-cols-2 3xl:mx-auto">
       <div className="space-y-8">
         <div>
           <h1 className="text-7xl font-extrabold text-blue-900">
@@ -38,27 +38,30 @@ export function Section1() {
           </Button>
         </div>
 
-        <div className="pt-16">
-          <ul className="flex flex-wrap items-center gap-12">
+        <div className="pt-8 sm:pt-16">
+          <ul className="flex flex-wrap items-center gap-12 sm:flex-nowrap">
             <li className="flex-1 text-gray-600 md:max-w-[135px]">
-              Trusted by <br />
+              Trusted by <br className="hidden sm:block" />
               leading companies
             </li>
-            <li>
-              <img src="/images/company-1.svg" alt="" />
-            </li>
-            <li>
-              <img src="/images/company-2.svg" alt="" />
-            </li>
-            <li>
-              <img src="/images/company-3.svg" alt="" />
-            </li>
-            <li>
-              <img src="/images/company-4.svg" alt="" />
-            </li>
-            <li>
-              <img src="/images/company-5.svg" alt="" />
-            </li>
+
+            <div className="flex flex-wrap items-center gap-9 sm:gap-12">
+              <li>
+                <img src="/images/company-1.svg" alt="" />
+              </li>
+              <li>
+                <img src="/images/company-2.svg" alt="" />
+              </li>
+              <li>
+                <img src="/images/company-3.svg" alt="" />
+              </li>
+              <li>
+                <img src="/images/company-4.svg" alt="" />
+              </li>
+              <li>
+                <img src="/images/company-5.svg" alt="" />
+              </li>
+            </div>
           </ul>
         </div>
       </div>
