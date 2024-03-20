@@ -3,7 +3,6 @@ export default {
   content: ['./src/**/*.{ts,tsx}'],
   theme: {
     screens: {
-      xs: 0,
       sm: '576px',
       md: '768px',
       lg: '992px',
@@ -36,6 +35,9 @@ export default {
         green: {
           800: '#166534',
           100: '#DCFCE7',
+        },
+        yellow: {
+          400: '#FACC15',
         },
       },
 
