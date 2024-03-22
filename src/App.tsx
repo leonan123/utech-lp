@@ -4,6 +4,7 @@ import { Section1 } from './components/sections/section1'
 import { Section2 } from './components/sections/section2'
 import { Section3 } from './components/sections/section3'
 import { Section4 } from './components/sections/section4'
+import { Testimonials } from './components/sections/testimonials'
 
 export function App() {
   return (
@@ -16,6 +17,7 @@ export function App() {
         <Section3 />
         <Section4 />
         <Metrics />
+        <Testimonials />
       </main>
     </>
   )
