@@ -19,7 +19,7 @@ export function CoolFeatures() {
           </span>
         </h2>
 
-        <p className=" text-base text-blue-900 sm:text-xl sm:leading-8 md:max-w-xl">
+        <p className="text-base text-blue-900 sm:text-xl sm:leading-8 md:max-w-xl">
           Mauris consequat, cursus pharetra et, habitasse rhoncus quis odio ac.
           In et dolor eu donec maecenas nulla. Cum sed orci, sit pellentesque
           quisque feugiat cras ullamcorper. Ultrices in amet, ullamcorper non

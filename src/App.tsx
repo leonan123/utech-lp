@@ -1,6 +1,7 @@
 import { Header } from './components/header'
 import { CoolFeatures } from './components/sections/cool-features'
 import { Metrics } from './components/sections/metrics'
+import { SectionSignUp } from './components/sections/section-sign-up'
 import { Section1 } from './components/sections/section1'
 import { Section2 } from './components/sections/section2'
 import { Section3 } from './components/sections/section3'
@@ -20,6 +21,7 @@ export function App() {
         <Metrics />
         <Testimonials />
         <CoolFeatures />
+        <SectionSignUp />
       </main>
     </>
   )
