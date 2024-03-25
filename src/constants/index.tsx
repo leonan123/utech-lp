@@ -1,3 +1,5 @@
+import colors from 'tailwindcss/colors'
+
 export const metrics = [
   {
     value: '195',
@@ -51,5 +53,105 @@ export const testimonials = [
     role: 'CEO',
     content:
       'Magna egestas aliquet ut integer non. Sed diam enim nibh sit. Aliquam laoreet aenean metus nibh eu scelerisque.',
+  },
+]
+
+export const productLinks = [
+  {
+    href: '#',
+    text: 'Pricing',
+  },
+  {
+    href: '#',
+    text: 'Overview',
+  },
+  {
+    href: '#',
+    text: 'Browse',
+  },
+  {
+    href: '#',
+    text: 'Accessibility',
+    badge: {
+      text: 'BETA',
+      textColor: colors.purple['800'],
+      bgColor: colors.purple['100'],
+    },
+  },
+]
+
+export const solutionLinks = [
+  {
+    href: '#',
+    text: 'Brainstorming',
+  },
+  {
+    href: '#',
+    text: 'Ideation',
+  },
+  {
+    href: '#',
+    text: 'Wireframing',
+  },
+  {
+    href: '#',
+    text: 'Research',
+  },
+]
+
+export const resourcesLinks = [
+  {
+    href: '#',
+    text: 'Help Center',
+  },
+  {
+    href: '#',
+    text: 'Blog',
+  },
+  {
+    href: '#',
+    text: 'Tutorials',
+  },
+  {
+    href: '#',
+    text: 'FAQs',
+  },
+]
+
+export const supportLinks = [
+  {
+    href: '#',
+    text: 'Contact Us',
+  },
+  {
+    href: '#',
+    text: 'Developers',
+  },
+  {
+    href: '#',
+    text: 'Documentation',
+  },
+  {
+    href: '#',
+    text: 'Integrations',
+  },
+]
+
+export const companyLinks = [
+  {
+    href: '#',
+    text: 'About',
+  },
+  {
+    href: '#',
+    text: 'Press',
+  },
+  {
+    href: '#',
+    text: 'Events',
+  },
+  {
+    href: '#',
+    text: 'Request Demo',
   },
 ]

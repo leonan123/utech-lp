@@ -1,3 +1,4 @@
+import { Footer } from './components/footer'
 import { Header } from './components/header'
 import { CoolFeatures } from './components/sections/cool-features'
 import { Metrics } from './components/sections/metrics'
@@ -23,6 +24,8 @@ export function App() {
         <CoolFeatures />
         <SectionSignUp />
       </main>
+
+      <Footer />
     </>
   )
 }
