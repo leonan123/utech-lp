@@ -1,4 +1,5 @@
 import { Header } from './components/header'
+import { CoolFeatures } from './components/sections/cool-features'
 import { Metrics } from './components/sections/metrics'
 import { Section1 } from './components/sections/section1'
 import { Section2 } from './components/sections/section2'
@@ -18,6 +19,7 @@ export function App() {
         <Section4 />
         <Metrics />
         <Testimonials />
+        <CoolFeatures />
       </main>
     </>
   )

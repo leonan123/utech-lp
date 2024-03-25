@@ -1,5 +1,6 @@
 import { FiCheck, FiArrowRight } from 'react-icons/fi'
 import { Button } from '../button'
+import * as Card from '../card'
 
 export function Section3() {
   return (
@@ -70,25 +71,20 @@ export function Section3() {
           </div>
 
           <ul className="-mt-11 mr-6 flex items-center gap-4 sm:mr-6">
-            <li className="z-20 w-[160px] rounded-xl bg-white p-4 shadow-picture sm:w-[200.33333px]">
-              <header>
-                <div className="inline-block rounded bg-purple-100 px-2 py-0.5 text-sm leading-5 text-purple-800 ">
-                  Featured
-                </div>
+            <Card.Root>
+              <Card.Header>
+                <Card.Badge text="Featured" />
+                <Card.Title title="The map of mathematics" />
+              </Card.Header>
 
-                <h3 className="mt-2 text-xl font-medium leading-6 text-blue-900">
-                  The map of mathematics
-                </h3>
-              </header>
-
-              <main className="mt-2">
+              <Card.Content>
                 <p className="text-sm leading-5 text-gray-600">
                   Egestas elit dui scelerisque ut eu purus aliquam vitae
                   habitasse.
                 </p>
-              </main>
+              </Card.Content>
 
-              <footer className="mt-4">
+              <Card.Footer>
                 <Button
                   size="md"
                   variant="outline"
@@ -96,28 +92,26 @@ export function Section3() {
                 >
                   Take Lesson
                 </Button>
-              </footer>
-            </li>
+              </Card.Footer>
+            </Card.Root>
 
-            <li className="z-10 w-[160px] rounded-xl bg-white p-4 shadow-picture sm:w-[200.33333px]">
-              <header>
-                <div className="inline-block rounded bg-blue-100 px-2 py-0.5 text-sm leading-5 text-blue-800 ">
-                  Popular
-                </div>
+            <Card.Root>
+              <Card.Header>
+                <Card.Badge
+                  text="Popular"
+                  className="bg-blue-100 text-blue-800"
+                />
+                <Card.Title title="Design for how people think" />
+              </Card.Header>
 
-                <h3 className="mt-2 text-xl font-medium leading-6 text-blue-900">
-                  The map of mathematics
-                </h3>
-              </header>
-
-              <main className="mt-2">
+              <Card.Content>
                 <p className="text-sm leading-5 text-gray-600">
-                  Egestas elit dui scelerisque ut eu purus aliquam vitae
-                  habitasse.
+                  Aliquam ut euismod condimentum elementum ultricies volutpat
+                  sit non.
                 </p>
-              </main>
+              </Card.Content>
 
-              <footer className="mt-4">
+              <Card.Footer>
                 <Button
                   size="md"
                   variant="outline"
@@ -125,28 +119,26 @@ export function Section3() {
                 >
                   Take Lesson
                 </Button>
-              </footer>
-            </li>
+              </Card.Footer>
+            </Card.Root>
 
-            <li className="z-10 hidden w-[160px] rounded-xl bg-white p-4 shadow-picture sm:w-[200.33333px] md:block">
-              <header>
-                <div className="inline-block rounded bg-green-100 px-2 py-0.5 text-sm leading-5 text-green-800 ">
-                  New
-                </div>
+            <Card.Root>
+              <Card.Header>
+                <Card.Badge
+                  text="New"
+                  className="bg-green-100 text-green-800"
+                />
+                <Card.Title title="International & commercial law" />
+              </Card.Header>
 
-                <h3 className="mt-2 text-xl font-medium leading-6 text-blue-900">
-                  The map of mathematics
-                </h3>
-              </header>
-
-              <main className="mt-2">
+              <Card.Content>
                 <p className="text-sm leading-5 text-gray-600">
-                  Egestas elit dui scelerisque ut eu purus aliquam vitae
-                  habitasse.
+                  Molestie integer eu arcu, mauris bibendum rhoncus imperdiet
+                  dui.
                 </p>
-              </main>
+              </Card.Content>
 
-              <footer className="mt-4">
+              <Card.Footer>
                 <Button
                   size="md"
                   variant="outline"
@@ -154,8 +146,8 @@ export function Section3() {
                 >
                   Take Lesson
                 </Button>
-              </footer>
-            </li>
+              </Card.Footer>
+            </Card.Root>
           </ul>
         </div>
       </div>
