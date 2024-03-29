@@ -1,12 +1,13 @@
 import { FiPlayCircle } from 'react-icons/fi'
 import { Button } from '../button'
+import { Heading } from '../heading'
 
-export function Section1() {
+export function Hero() {
   return (
-    <section className="mx-4 grid grid-cols-1 items-center gap-20 py-20 md:mx-10 md:max-w-[1440px] md:grid-cols-2 3xl:mx-auto">
+    <section className="mx-4 grid grid-cols-1 items-center gap-20 pb-20 pt-10 md:mx-10 md:max-w-[1440px] md:grid-cols-2 3xl:mx-auto">
       <div className="space-y-8">
         <div>
-          <h1 className="text-7xl font-extrabold text-blue-900">
+          <Heading>
             <span className="relative">
               Teach
               <img
@@ -16,7 +17,7 @@ export function Section1() {
               />
             </span>{' '}
             students worldwide
-          </h1>
+          </Heading>
         </div>
         <p className="max-w-[575px] text-2xl text-blue-900">
           Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa

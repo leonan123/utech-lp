@@ -1,24 +1,31 @@
 import { FiCheck, FiArrowRight } from 'react-icons/fi'
 import { Button } from '../button'
 import * as Card from '../card'
+import { Heading } from '../heading'
 
-export function Section3() {
+import * as DesktopScreen from '../desktop-screen'
+
+export function FeatureSection() {
   return (
     <section className="mx-4 max-w-[1440px] py-20 md:mx-10 3xl:mx-auto">
-      <div className="flex flex-wrap items-center justify-between text-blue-900">
-        <div className="max-w-[544px] space-y-8">
-          <h2 className="text-6xl font-extrabold">
+      <div className="flex flex-wrap items-center justify-between gap-8 text-blue-900 xl:flex-nowrap xl:gap-0">
+        <div className="w-full space-y-8">
+          <Heading
+            as="h2"
+            size="heading2"
+            className="max-w-[544px] lg:max-w-[700px] xl:text-start"
+          >
             An{' '}
             <span className="relative">
               all-in-one{' '}
               <img
                 src="/images/underlined-xl.svg"
                 alt=""
-                className="absolute -bottom-0.5 right-5 -z-10"
+                className="absolute -bottom-0.5 right-5 -z-10 max-w-[8rem] sm:max-w-[none]"
               />
             </span>{' '}
             app that makes it easier
-          </h2>
+          </Heading>
 
           <ul>
             <li className="flex items-center gap-2 text-xl leading-9">
@@ -47,28 +54,20 @@ export function Section3() {
           </Button>
         </div>
 
-        <div className="relative flex min-h-[546.968px] flex-col items-end">
+        <div className="relative flex flex-col items-end lg:mx-auto xl:mx-0">
           <img
             src="/images/blobGroup-2.svg"
             alt=""
             className="absolute -left-40 -top-12 -z-10"
           />
 
-          <div className="z-10 aspect-video max-h-[391px] w-full max-w-[600px] bg-white">
-            <div className="flex h-full w-full flex-col overflow-hidden rounded-2xl shadow-picture">
-              <header className="bg-white px-4 pt-4">
-                <div className="flex h-full w-full items-center gap-2">
-                  <span className="h-2.5 w-2.5 rounded-full bg-red-600" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-orange-400" />
-                  <span className="h-2.5 w-2.5 rounded-full bg-green-500" />
-                </div>
-              </header>
+          <DesktopScreen.Root className="max-h-[391px] max-w-[600px] bg-white">
+            <DesktopScreen.Header className="min-h-[none] gap-0 py-0" />
 
-              <main className="flex-1 px-2 pb-2">
-                <div className="h-full w-full rounded-e-2xl bg-[url('/images/video.svg')] bg-cover" />
-              </main>
-            </div>
-          </div>
+            <DesktopScreen.Content className="px-2 pb-2">
+              <div className="h-full w-full rounded-e-2xl bg-[url('/images/video.svg')] bg-cover" />
+            </DesktopScreen.Content>
+          </DesktopScreen.Root>
 
           <ul className="-mt-11 mr-6 flex items-center gap-4 sm:mr-6">
             <Card.Root>
@@ -122,7 +121,7 @@ export function Section3() {
               </Card.Footer>
             </Card.Root>
 
-            <Card.Root>
+            <Card.Root className="hidden sm:block">
               <Card.Header>
                 <Card.Badge
                   text="New"

@@ -2,6 +2,7 @@ import { FiChevronDown, FiMenu } from 'react-icons/fi'
 import { Button } from './button'
 import { useState } from 'react'
 import { twMerge } from 'tailwind-merge'
+import { menuLinks } from '../constants'
 
 export function Header() {
   const [menuIsOpen, setMenuIsOpen] = useState(false)
@@ -12,8 +13,12 @@ export function Header() {
 
   return (
     <header className="mx-4 flex min-h-[4.1875rem] items-center justify-between py-6 text-blue-900 md:mx-10 md:max-w-[1440px] 3xl:mx-auto">
-      <a href="#" className="mr-12">
+      <a
+        href="#"
+        className="mr-12 flex items-center gap-1 text-3xl font-black text-blue-900"
+      >
         <img src="/logo.svg" alt="" />
+        <span>teach</span>
       </a>
 
       <div
@@ -24,24 +29,23 @@ export function Header() {
       >
         <div className="mx-4 flex w-full flex-col items-start justify-between gap-12 py-3 md:container md:mx-auto lg:flex-row lg:items-center">
           <nav className="flex flex-col items-start gap-8 px-2 py-3 lg:flex-row lg:items-center lg:gap-12">
-            <a href="#" className="hover:opacity-80">
-              Products
-            </a>
+            {menuLinks.map((link, index) => {
+              return (
+                <a
+                  key={index}
+                  href={link.href}
+                  className="flex items-center gap-2 hover:opacity-80"
+                >
+                  {link.text}
 
-            <a href="#" className="hover:opacity-80">
-              Solutions
-            </a>
-
-            <a href="#" className="hover:opacity-80">
-              Pricing
-            </a>
-
-            <a href="#" className="flex items-center gap-2 hover:opacity-80">
-              <span>Resources</span>
-              <span className="text-lg">
-                <FiChevronDown />
-              </span>
-            </a>
+                  {link.subMenu && (
+                    <span className="text-lg">
+                      <FiChevronDown />
+                    </span>
+                  )}
+                </a>
+              )
+            })}
           </nav>
 
           <div className="flex items-center gap-4">

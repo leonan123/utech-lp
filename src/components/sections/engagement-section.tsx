@@ -1,7 +1,8 @@
 import { FiArrowRight } from 'react-icons/fi'
 import { Button } from '../button'
+import { Heading } from '../heading'
 
-export function Section4() {
+export function EngagementSection() {
   return (
     <section className="mx-4 flex max-w-[1440px] flex-wrap-reverse gap-11 py-20 md:mx-10 lg:flex-nowrap 3xl:mx-auto">
       <img
@@ -11,7 +12,7 @@ export function Section4() {
       />
 
       <div className="flex flex-col justify-center gap-5 sm:gap-8">
-        <h2 className="text-2xl font-black tracking-wide text-blue-900 sm:text-6xl sm:tracking-tight md:tracking-wide">
+        <Heading as="h2" size="heading2">
           Meet{' '}
           <span className="relative">
             international{' '}
@@ -22,7 +23,7 @@ export function Section4() {
             />
           </span>{' '}
           students & teachers
-        </h2>
+        </Heading>
 
         <p className="text-justify text-base text-blue-900 sm:text-xl sm:leading-8 md:max-w-xl">
           Morbi sit egestas dignissim pharetra, sed amet. Tempus justo senectus

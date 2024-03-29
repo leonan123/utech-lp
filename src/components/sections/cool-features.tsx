@@ -2,12 +2,13 @@ import { FiArrowRight } from 'react-icons/fi'
 import { Button } from '../button'
 
 import * as Card from '../card'
+import { Heading } from '../heading'
 
 export function CoolFeatures() {
   return (
     <section className="mx-4 flex flex-wrap items-center py-20 md:mx-10 md:max-w-[1440px] lg:flex-nowrap 3xl:mx-auto">
       <div className="space-y-8">
-        <h2 className="text-2xl font-black text-blue-900 sm:text-4xl lg:text-6xl">
+        <Heading as="h2" size="heading2">
           All the cool{' '}
           <span className="relative">
             features
@@ -17,7 +18,7 @@ export function CoolFeatures() {
               className="absolute -bottom-1 left-0 -z-10 w-full"
             />
           </span>
-        </h2>
+        </Heading>
 
         <p className="text-base text-blue-900 sm:text-xl sm:leading-8 md:max-w-xl">
           Mauris consequat, cursus pharetra et, habitasse rhoncus quis odio ac.

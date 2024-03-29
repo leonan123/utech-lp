@@ -1,5 +1,6 @@
 import { ElementType, HTMLAttributes } from 'react'
 import { twMerge } from 'tailwind-merge'
+import { Heading } from './heading'
 
 interface ICardRootProps extends HTMLAttributes<HTMLElement> {
   as?: ElementType
@@ -45,14 +46,13 @@ function Badge({ text, className }: ICardBadgeProps) {
 
 function Title({ title, className }: ICardTitleProps) {
   return (
-    <h3
-      className={twMerge(
-        'mt-2 text-xl font-medium leading-6 text-blue-900',
-        className,
-      )}
+    <Heading
+      as="h3"
+      size="heading3"
+      className={twMerge('mt-2 leading-6', className)}
     >
       {title}
-    </h3>
+    </Heading>
   )
 }
 

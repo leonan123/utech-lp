@@ -10,6 +10,7 @@ import { Badge } from './card'
 
 import { PiGlobeLight } from 'react-icons/pi'
 import { BiEuro, BiUniversalAccess } from 'react-icons/bi'
+import { Heading } from './heading'
 
 export function Footer() {
   return (
@@ -17,13 +18,23 @@ export function Footer() {
       <div className="mx-4 space-y-8 py-20 md:mx-10 md:max-w-[1440px] 3xl:mx-auto">
         <nav className="grid grid-cols-2 gap-12 lg:grid-cols-6">
           <div>
-            <a href="#">
+            <a
+              href="#"
+              className="flex items-center gap-1 text-3xl font-bold text-white"
+            >
               <img src="/logo.svg" alt="" />
+              <span>teach</span>
             </a>
           </div>
 
           <div>
-            <h4 className="mb-5 text-lg font-bold tracking-wider">Product</h4>
+            <Heading
+              as="h5"
+              size="heading4"
+              className="mb-5 tracking-wider text-inherit"
+            >
+              Product
+            </Heading>
             <ul className="space-y-5">
               {productLinks.map((link, index) => (
                 <li key={index}>
@@ -43,7 +54,13 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="mb-5 text-lg font-bold tracking-wider">Solutions</h4>
+            <Heading
+              as="h5"
+              size="heading4"
+              className="mb-5 tracking-wider text-inherit"
+            >
+              Solutions
+            </Heading>
             <ul className="space-y-5">
               {solutionLinks.map((link, index) => (
                 <li key={index}>
@@ -59,7 +76,13 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="mb-5 text-lg font-bold tracking-wider">Resources</h4>
+            <Heading
+              as="h5"
+              size="heading4"
+              className="mb-5 tracking-wider text-inherit"
+            >
+              Resources
+            </Heading>
             <ul className="space-y-5">
               {resourcesLinks.map((link, index) => (
                 <li key={index}>
@@ -75,7 +98,13 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="mb-5 text-lg font-bold tracking-wider">Support</h4>
+            <Heading
+              as="h5"
+              size="heading4"
+              className="mb-5 tracking-wider text-inherit"
+            >
+              Support
+            </Heading>
             <ul className="space-y-5">
               {supportLinks.map((link, index) => (
                 <li key={index}>
@@ -91,7 +120,13 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="mb-5 text-lg font-bold tracking-wider">Company</h4>
+            <Heading
+              as="h5"
+              size="heading4"
+              className="mb-5 tracking-wider text-inherit"
+            >
+              Company
+            </Heading>
             <ul className="space-y-5">
               {companyLinks.map((link, index) => (
                 <li key={index}>

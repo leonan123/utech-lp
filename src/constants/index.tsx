@@ -1,5 +1,25 @@
 import colors from 'tailwindcss/colors'
 
+export const menuLinks = [
+  {
+    text: 'Products',
+    href: '#',
+  },
+  {
+    text: 'Solutions',
+    href: '#',
+  },
+  {
+    text: 'Pricing',
+    href: '#',
+  },
+  {
+    text: 'Resources',
+    href: '#',
+    subMenu: [],
+  },
+]
+
 export const metrics = [
   {
     value: '195',

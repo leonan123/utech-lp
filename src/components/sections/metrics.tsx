@@ -10,9 +10,9 @@ export function Metrics() {
             className="flex flex-col items-center justify-center gap-4 text-yellow-400"
           >
             <img src={metric.icon} alt="" className="size-16" />
-            <h6 className="text-5xl font-extrabold md:text-7xl">
+            <strong className="text-5xl font-extrabold md:text-7xl">
               {metric.value}
-            </h6>
+            </strong>
             <p className="text-base font-light tracking-wide md:text-2xl">
               {metric.label}
             </p>

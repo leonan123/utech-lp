@@ -1,6 +1,7 @@
-import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
+import { Heading } from '../heading'
+import * as DesktopScreen from '../desktop-screen'
 
-export function Section2() {
+export function ToolsInformation() {
   return (
     <section className="bg-gray-100">
       <div className="relative mx-4 space-y-7 py-20 md:mx-10 md:max-w-[1440px] md:space-y-20 3xl:mx-auto">
@@ -17,18 +18,19 @@ export function Section2() {
         />
 
         <div className="relative z-10 flex flex-col items-center justify-center gap-6 text-blue-900">
-          <h2 className="text-6xl font-extrabold">
+          <Heading as="h2" size="heading2">
             All the{' '}
             <span className="relative">
               tools{' '}
               <img
                 src="/images/underlined-lg.svg"
-                className="absolute bottom-0.5 right-1 -z-10 max-w-[8rem]  md:right-4"
+                className="absolute bottom-0.5 right-1 -z-10 max-w-[5rem] sm:right-4 sm:max-w-[8rem]"
                 alt=""
               />
             </span>{' '}
             that you need
-          </h2>
+          </Heading>
+
           <p className="max-w-[830px] text-xl leading-6 md:text-center md:leading-9">
             Sit elit feugiat turpis sed integer integer accumsan turpis. Sed
             suspendisse nec lorem mauris. Pharetra, eu imperdiet ipsum ultrices
@@ -37,35 +39,13 @@ export function Section2() {
         </div>
 
         <div className="flex flex-col items-center">
-          <div className="relative z-10 aspect-video max-h-[640px] min-h-[226px] w-full px-4 md:px-20">
-            <div className="flex h-full w-full flex-col overflow-hidden rounded-lg shadow-picture">
-              <header className="flex min-h-[41px] items-center justify-between gap-8 bg-white px-4 py-2">
-                <div className="flex items-center gap-2">
-                  <span className="h-3 w-3 rounded-full bg-red-600" />
-                  <span className="h-3 w-3 rounded-full bg-orange-400" />
-                  <span className="h-3 w-3 rounded-full bg-green-500" />
-                </div>
+          <DesktopScreen.Root className="max-w-[1280px]">
+            <DesktopScreen.Header>
+              <DesktopScreen.Navigation host="utech.com" />
+            </DesktopScreen.Header>
 
-                <div className="max-w-[494.903px] flex-1 rounded bg-gray-100 py-0.5 text-center">
-                  <span className="select-none text-xs text-gray-400">
-                    uteach.com
-                  </span>
-                </div>
-
-                <div className="flex items-center justify-center gap-1.5">
-                  <span>
-                    <FiChevronLeft className="h-6 w-6 text-gray-400" />
-                  </span>
-
-                  <span>
-                    <FiChevronRight className="h-6 w-6 text-gray-600" />
-                  </span>
-                </div>
-              </header>
-
-              <main className="flex-1 bg-[url('/images/screen-picture.svg')] bg-cover" />
-            </div>
-          </div>
+            <DesktopScreen.Content className="bg-[url('/images/screen-picture.svg')]" />
+          </DesktopScreen.Root>
 
           <div className="z-10 flex flex-col">
             <img
