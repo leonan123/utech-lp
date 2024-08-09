@@ -61,7 +61,7 @@ export function FeatureSection() {
             className="absolute -left-40 -top-12 -z-10"
           />
 
-          <DesktopScreen.Root className="max-h-[391px] max-w-[600px] bg-white">
+          <DesktopScreen.Root className="max-h-[391px] min-h-fit max-w-[600px] bg-white">
             <DesktopScreen.Header className="min-h-[none] gap-0 py-0" />
 
             <DesktopScreen.Content className="px-2 pb-2">

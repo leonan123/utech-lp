@@ -35,6 +35,7 @@ export function Footer() {
             >
               Product
             </Heading>
+
             <ul className="space-y-5">
               {productLinks.map((link, index) => (
                 <li key={index}>
